@@ -1,0 +1,117 @@
+body {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  padding-bottom: 0;
+}
+h1,h2,h3,h4{ font-weight: normal;}
+a {color: #060}
+output, .demo {
+  padding:10px 0;
+  display:block;
+  width: auto;
+}
+ul {
+  margin-left: 2em;
+}
+li, p {
+  margin-bottom: 1em;
+}
+pre {
+  padding: 10px;
+}
+
+::-moz-selection {
+  background: transparent; /* Firefox */
+}
+output {
+  display: block;
+  background: transparent;
+}
+output span {color: lime;font-weight:bold}
+footer nav li {
+  display: inline;
+  list-style: none;
+  padding-right: 5px;
+}
+footer a{color: inherit;}
+footer ul {
+  margin: 0 0 10px 0;
+}
+button{
+  border: none;
+  background: #090;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.7);
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition:300ms;
+  transition: 300ms;
+}
+button:focus, button:active {
+  box-shadow: 0px 0px 2px rgba(0,0,0,.7);
+}
+
+footer a:hover, footer nav strong {
+  background: #fff;
+  text-decoration: none;
+}
+p {clear: both;}
+footer{
+  text-align: right;
+  margin-top:50px;
+  color: #181818;
+  padding:10px 10px 50px 10px;
+}
+#challengeintro.hidden {
+  visibility: hidden;
+}
+#challengeintro.show {
+  opacity: 1;
+}
+#challengeintro {
+  opacity: 0;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+#log {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  padding: 20px;
+  background: #333;
+  width: calc(100%-20px);
+  border-radius: 2px;
+  color: #fff;  
+}
+#log.done {
+  opacity: 1;
+}
+#log a {color: #fff;}
+#challenge {
+  font-size: 24px;
+}
+#challenge span {
+  opacity: 0;
+  color: #666;
+  font-weight: normal;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition:300ms;
+  transition: 300ms;
+}
+#challenge.measuring span{
+  opacity: 1;
+}
+
+
+
+
