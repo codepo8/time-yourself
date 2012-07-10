@@ -21,6 +21,7 @@ document.addEventListener('keyup', up, false);
 
 function down(ev) {
   if (!itson) { return; }
+  ev.preventDefault();
   doit.className = 'measuring';
   if (time === 0) { 
     time = ev.timeStamp; 
@@ -28,6 +29,7 @@ function down(ev) {
   }
 }
 function up(ev) {
+  ev.preventDefault();
   doit.className = '';
   if (!itson) { return; }
   if (time !== 0) {
