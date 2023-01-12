@@ -41,7 +41,7 @@ function up(ev) {
 
 function displayresult(result) {
   var tomatch = challengetime * 1000,
-      difference = tomatch - result,
+      difference = Math.floor(tomatch - result),
       msg = '',
       tweet = '';
   if (difference === 0) {
